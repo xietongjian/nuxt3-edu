@@ -4,20 +4,21 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: "%s - 固定标题",
-      title: "帝莎编程",
+      titleTemplate: "%s - 流程引擎",
+      title: "XXXX流程引擎",
       charset: "utf-8",
       htmlAttrs: {
         lang: "zh-cn",
       },
       meta: [
-        { name: "description", content: "帝莎编程描述" },
-        { name: "keywords", content: "帝莎编程关键词" },
+        { name: "description", content: "XXXX流程引擎描述" },
+        { name: "keywords", content: "XXXX流程引擎关键词" },
       ],
       script: [
         // { src:"http://xxx.js" }
       ],
       link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         // { rel:"stylesheet",href:"http://xxx.css" }
       ],
     },

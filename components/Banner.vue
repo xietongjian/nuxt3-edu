@@ -1,19 +1,22 @@
 <template>
-    <n-carousel show-arrow class="mb-6" autoplay>
-        <img v-for="(item,index) in data" :key="index"
-        class="carousel-img rounded cursor-pointer"
-        :src="item.src"
-        @click="$commonOpen(item)"
-        >
-    </n-carousel>
+  <n-carousel show-arrow class="mb-6" autoplay>
+    <div
+        v-for="(item,index) in data"
+        :key="index"
+        class="bg-white carousel-img cursor-pointer object-cover text-center">
+      <img :src="item.src" class="object-contain md:object-cover m-auto"
+           @click="$commonOpen(item)"
+      >
+    </div>
+  </n-carousel>
 </template>
 <script setup>
 import {
-    NCarousel
+  NCarousel
 } from "naive-ui"
 
 defineProps({
-    data:Array
+  data: Array
 })
 </script>
 <style scoped>

@@ -23,12 +23,19 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   css: [
     "@/assets/main.css",
   ],
+
   modules: [
     "nuxt-windicss",
   ],
+
+  windicss: {
+    configFile: "windi.config.ts",
+  },
+
   build: {
     transpile: process.env.NODE_ENV === "production"
       ? [
@@ -39,6 +46,7 @@ export default defineNuxtConfig({
       ]
       : ["@juggle/resize-observer"],
   },
+
   vite: {
     optimizeDeps: {
       include: process.env.NODE_ENV === "development"
@@ -46,13 +54,17 @@ export default defineNuxtConfig({
         : [],
     },
   },
+
   imports: {
     dirs: ["apis"],
   },
+
   nitro: {
     // 缩小捆绑包
     minify: true,
     // 关闭源映射生成
     sourceMap: false,
   },
+
+  compatibilityDate: "2025-02-20",
 });

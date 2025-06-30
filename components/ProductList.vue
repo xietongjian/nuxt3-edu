@@ -33,8 +33,13 @@ const props = defineProps({
 
 const open = ()=>{
   let path = ""
+  path = `/product/detail/${props.item.id}`;
+  /*
+  * const open = ()=>{
+    navigateTo("/post_detail/"+props.item.id)
+}*/
   // 课程详情
-  if(["course","media","audio","video"].includes(props.item.type)){
+  /*if(["course","media","audio","video"].includes(props.item.type)){
     path = `/detail/course/${props.item.id}`
   }
   // 专栏详情
@@ -52,7 +57,7 @@ const open = ()=>{
   }
   if(props.item.flashsale_id){
     path = `${path}?flashsale_id=${props.item.flashsale_id}`
-  }
+  }*/
 
   navigateTo(path)
 }

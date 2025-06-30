@@ -1,12 +1,12 @@
 <template>
     <div >
-      <div class="bg-blue-500 h-[200px] w-full">
+      <div class="bg-blue-400 h-[200px] w-full">
         Banner
       </div>
 
       <div class="container">
         <div class="p-3 border-b text-lg">
-          <h4>精品推荐</h4>
+          <h4>产品</h4>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-5">
           <ProductList v-for="(item,index) in data" :key="index" :item="item"/>

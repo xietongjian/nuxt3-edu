@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="">
     <div class="text-center p-2">
       <Logo class="m-auto w-[40px] h-[40px] rounded"/>
     </div>

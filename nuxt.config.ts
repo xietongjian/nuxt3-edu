@@ -28,9 +28,7 @@ export default defineNuxtConfig({
     "@/assets/main.css",
   ],
 
-  modules: [
-    "nuxt-windicss",
-  ],
+  modules: ["nuxt-windicss", "nuxtjs-naive-ui"],
 
   windicss: {
     configFile: "windi.config.ts",
